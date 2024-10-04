@@ -1,0 +1,49 @@
+In Java, static and non-static are keywords used to define members (variables and methods) within a class. They determine how these members are accessed and behave within the class and its objects. Here's a detailed explanation:
+
+Static Members:
+
+Declared using the static keyword within a class.
+There's only one copy of a static member shared by all objects of the class.
+This copy is created and initialized when the class is loaded (typically when the first object is created).
+The value of a static member can be changed, and the change will be reflected in all objects of the class.
+Access:
+Can be accessed directly using the class name followed by a dot (.) without creating an object of the class.
+Example: ClassName.staticVariableName
+Use Cases:
+To store class-level data that needs to be shared among all objects (e.g., constants, counters).
+To perform initialization tasks that only need to be done once during class loading (e.g., utility methods).
+
+
+Non-Static Members:
+
+Members declared without the static keyword within a class.
+Each object of the class has its own copy of a non-static member.
+The value of a non-static member can be changed for a specific object, and the change won't affect other objects.
+Accessed through an object reference (variable that holds the memory address of the object).
+Example: objectReference.nonStaticVariableName
+Use Cases:
+To store data specific to an individual object (e.g., properties of a car object).
+To define methods that operate on the data of a specific object (e.g., methods to calculate the area of a rectangle object).
+
+
+
+Static Inner Classes:
+
+Declared using the static keyword within an outer class.
+Behavior:
+Unlike regular inner classes, static inner classes don't require an instance of the outer class to be created.
+They are treated more like top-level classes nested within another class for organizational purposes.
+Static inner classes can only access static members of the outer class. They cannot access non-static members (variables or methods) through the this keyword of the outer class.
+Use Cases:
+To create utility classes or helper classes that are closely related to the outer class functionality.
+To group related functionality within the outer class without tight coupling to specific objects.
+Regular Inner Classes (Non-Static):
+
+Declared without the static keyword within an outer class.
+Behavior:
+Require an instance of the outer class to be created first.
+They can access both static and non-static members of the outer class using the this keyword of the outer class.
+They have a closer relationship to the outer class and its objects.
+Use Cases:
+To create classes that are tightly coupled with the functionality of the outer class and its objects.
+To access non-static members of the outer class for specific object-related operations.

@@ -1,0 +1,20 @@
+1  --> objects are stored in Heap Memory.
+
+2 --> INSTANCES are accessed by (' . ')- dot operator.
+
+3 --> OBJECTS are created using NEW keyword.
+
+4 --> Classes are accessed through class Reference.
+
+5 --> Default values of class are outputed when the INSTANCES is not defined for the object.
+
+6 --> Default Constructor - it is automatically initialised.
+
+7 --> Constructor  - 'THIS' keyword is exchange with object name , for every object.
+.                  - you have have different names in constructor.
+
+8 --> STATIC - can be used without any object.
+- static can run only in static.
+- something which is not static ,belongs to an object
+- Agar kisi cheese ke aage static laga diya toh usko use krne ke liye object nhi banana. padega.
+- so static variable is a variable who can change its reference. but object is never changed 

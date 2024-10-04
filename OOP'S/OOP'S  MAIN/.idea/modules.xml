@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Abstract Class/Abstract Class.iml" filepath="$PROJECT_DIR$/Abstract Class/Abstract Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Comparison Operator/Comparison Operator.iml" filepath="$PROJECT_DIR$/Comparison Operator/Comparison Operator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomArrayList/CustomArrayList.iml" filepath="$PROJECT_DIR$/CustomArrayList/CustomArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lambda Function/Lambda Function.iml" filepath="$PROJECT_DIR$/Lambda Function/Lambda Function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S  MAIN.iml" filepath="$PROJECT_DIR$/OOP'S  MAIN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectDemo/ObjectDemo.iml" filepath="$PROJECT_DIR$/ObjectDemo/ObjectDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Polymorphism/Polymorphism.iml" filepath="$PROJECT_DIR$/Polymorphism/Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice/Practice.iml" filepath="$PROJECT_DIR$/Practice/Practice.iml" />
+    </modules>
+  </component>
+</project>
