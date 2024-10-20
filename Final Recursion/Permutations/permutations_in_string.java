@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class permutations_in_string {
+    // substring(inclusive , exclusive)
     static void permutations(String empty, String processed){
         if (processed.isEmpty()){
             System.out.println(empty);
