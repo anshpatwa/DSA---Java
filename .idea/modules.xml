@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Abstract Class/Abstract Class.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Abstract Class/Abstract Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Searching Algo/Binary Search/Binary Search.iml" filepath="$PROJECT_DIR$/Searching Algo/Binary Search/Binary Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bit Manipulation/Bit Manipulation.iml" filepath="$PROJECT_DIR$/Bit Manipulation/Bit Manipulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Collections/Collections.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Comparison Operator/Comparison Operator.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Comparison Operator/Comparison Operator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/CustomArrayList/CustomArrayList.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/CustomArrayList/CustomArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Final Recursion/Final Recursion.iml" filepath="$PROJECT_DIR$/Final Recursion/Final Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Till Death.iml" filepath="$PROJECT_DIR$/Java Till Death.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Lambda Function/Lambda Function.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Lambda Function/Lambda Function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Inheritance/Multiple Inheritance/Multiple Inheritance.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Inheritance/Multiple Inheritance/Multiple Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/OOP'S  MAIN.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/OOP'S  MAIN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/ObjectDemo/ObjectDemo.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/ObjectDemo/ObjectDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Polymorphism/Polymorphism.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Polymorphism/Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Searching Algo/Searching Algo.iml" filepath="$PROJECT_DIR$/Searching Algo/Searching Algo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Inheritance/Single Inheritance/Single Inheritance.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Inheritance/Single Inheritance/Single Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack and Queues/Stack and Queues.iml" filepath="$PROJECT_DIR$/Stack and Queues/Stack and Queues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Inheritance/Single Inheritance/lighting/lighting.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/Inheritance/Single Inheritance/lighting/lighting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP'S/OOP'S  MAIN/magic_Number/magic_Number.iml" filepath="$PROJECT_DIR$/OOP'S/OOP'S  MAIN/magic_Number/magic_Number.iml" />
+    </modules>
+  </component>
+</project>
