@@ -4,7 +4,7 @@ public class BST {
     private Node root;
     public BST(){}
     public class Node{
-        private int value;
+         int value;
         private Node left;
         private Node right;
         private int height;

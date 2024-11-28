@@ -60,6 +60,43 @@ public class BinaryTree {
         }
         prettyDisplay(node.left, level + 1);
     }
+
+    // Traversals
+    public void Pre_order(){
+        Pre_order(root);
+    }
+    public void Pre_order(Node node){
+        if (node==null){
+            return;
+        }
+        System.out.println(node.val+"-->");
+        Pre_order(node.left);
+        Pre_order(node.right);
+    }
+
+    public void In_order(){
+        In_order(root);
+    }
+    public void In_order(Node node){
+        if (node==null){
+            return;
+        }
+        In_order(node.left);
+        System.out.println(node.val+"-->");
+        In_order(node.right);
+    }
+    public void Post_order(){
+        Post_order(root);
+    }
+    public void Post_order(Node node){
+        if (node==null){
+            return;
+        }
+        Post_order(node.left);
+        Post_order(node.right);
+        System.out.println(node.val+"-->");
+
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        BinaryTree tree = new BinaryTree();
