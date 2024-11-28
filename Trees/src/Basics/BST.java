@@ -52,12 +52,20 @@ public class BST {
             this.insert(arr[i]);
         }
     }
+    // For Sorted Array like---> {1,2,3,4,5,6,7,8,9,10}
+    public void populatesorted(int[] arr,int start,int end){
+        if (start>=end){ return;}
+        int mid = (start+end)/2;
+        this.insert(arr[mid]);
+         populatesorted(arr,start,mid);
+         populatesorted(arr,mid+1,end);
+    }
 
     public void display(){
         display(root ,"Root Node :");
     }
 
-    public void display(Node node,String details){
+    private void display(Node node,String details){
         if (node==null){
             return;
         }
@@ -70,7 +78,7 @@ public class BST {
         return balanced(root);
     }
 
-    public boolean balanced(Node node){  //  height <=1
+    private boolean balanced(Node node){  //  height <=1
         if (node==null){
             return true;
         }
@@ -83,15 +91,24 @@ public class BST {
         tree.populate(arr);
         tree.display();
         System.out.println("Balanced: "+tree.balanced());
-            /*
 
-                  ------- 5-----
-                  |             |
-              ----2---          7---
-              |       |            |
-              1     --4          ----9-----
-                    |            |         |
-                    3            8         10
+
+        BST tree2 = new BST();
+        int[] arr2 ={1,2,3,4,5,6,7,8,9};
+        tree2.populatesorted(arr2,0, arr2.length);
+        tree2.display();
+
+
+
+            /*
+                        tree                                                      tree2
+                  ------- 5-----                                               -----5------
+                  |             |                                              |          |
+              ----2---          7---                                       ----3----   ----8----
+              |       |            |                                       |        |  |        |
+              1     --4          ----9-----                             ---2---  ---4 -7--   ---9---
+                    |            |         |                            |      | |   |  |  |     |
+                    3            8         10                           1               6
 
              */
     }
