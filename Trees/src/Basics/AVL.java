@@ -9,24 +9,13 @@ public class AVL {
         private Node right;
         private int height;
 
-        public Node(int value){
-            this.value=value;
-        }
+        public Node(int value){this.value=value;}
 
-        public int getValue(){
-            return value;
-        }
+        public int getValue(){return value;}
     }
-    public int height(){
-        return height(root);
-    }
+    public int height(){return height(root);}
 
-    private int height(Node node){
-        if (node==null){
-            return -1;
-        }
-        return node.height;
-    }
+    private int height(Node node){ return  (node==null)? -1 : node.height;}
 
     public void insert(int value){
         root = insert(value,root);
@@ -52,13 +41,13 @@ public class AVL {
         if (height(node.left)-height(node.right)>1){
         // left heavy
             if (height(node.left.left)-height(node.left.right)>0){
-                //left left case i.e right rotate
+                //left left case i.e Right Rotate (P)
                 return rightrotate(node);
             }
             if (height(node.left.left)-height(node.left.right)<0){
-                //left right case.
-                node.left=leftrotate(node.left);// LL-->right rotate
-                return rightrotate(node);// RR-->left rotate
+                //left right case --> 1. Left Rotate (C)  --> 2. Right Rotate (P)
+                node.left=leftrotate(node.left);
+                return rightrotate(node);
             }
         }
 
@@ -69,7 +58,7 @@ public class AVL {
                 return leftrotate(node);
             }
             if (height(node.right.left)-height(node.right.right)>0){
-                // left right case
+                // Right Left Case --> 1. Right Rotate (C)  --> 2. Left Rotate (P)
                 node.right=rightrotate(node.right);
                 return leftrotate(node);
             }
@@ -91,16 +80,16 @@ public class AVL {
     }
 
     public Node leftrotate(Node c){
-        Node p = c.right;
-        Node t = p.left;
+        Node g = c.right;
+        Node t = g.left;
 
-        p.left=c;
+        g.left=c;
         c.right=t;
 
-        p.height =Math.max(height(p.left),height(p.right)+1);
+        g.height =Math.max(height(g.left),height(g.right)+1);
         c.height =Math.max(height(c.left),height(c.right)+1);
 
-        return p;
+        return g;
     }
 
 
@@ -138,7 +127,7 @@ public class AVL {
             tree.insert(i);
         }
 
-        System.out.println(tree.height());
+        System.out.println(tree.height()); // log(1000) =3
         System.out.println(tree.balanced());
     }
 }
