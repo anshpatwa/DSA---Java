@@ -5,8 +5,8 @@ public class BST {
     public BST(){}
     public class Node{
          int value;
-        private Node left;
-        private Node right;
+        public Node left;
+        public Node right;
         private int height;
         public Node(int value){
             this.value = value;
