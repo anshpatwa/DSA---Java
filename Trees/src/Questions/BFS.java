@@ -5,8 +5,8 @@ import java.util.*;
 
 
 public class BFS {
-    static private Node root;
-    class Node{
+     static private Node root;
+    static class Node{
         int val;
         Node left;
         Node right;
@@ -275,6 +275,32 @@ public class BFS {
         return ((node.left==x && node.right==y)||(node.left==y && node.right==x)||issibling(node.left,x,y)|| issibling(node.right,x,y));
     }
 
+    // Is Symmetric
+    public boolean IsSymmetric(Node node){
+       Queue<Node> queue = new LinkedList<>();
+       queue.offer(root.left);
+       queue.offer(root.right);
+
+       while (!queue.isEmpty()){
+           Node lefts = queue.poll();
+           Node rights = queue.poll();
+
+           if (lefts==null && rights==null){
+               continue;
+           }
+           if (lefts==null || rights==null){
+               return false;
+           }
+           if (lefts.val != rights.val){
+               return false;
+           }
+           queue.offer(lefts.left);
+           queue.offer(rights.right);
+           queue.offer(lefts.right);
+           queue.offer(rights.left);
+       }
+       return true;
+    }
 
     public static void main(String[] args) {
        BFS tree = new BFS();
@@ -286,8 +312,8 @@ public class BFS {
        tree.bfsInsert(6);
        tree.bfsInsert(7);
 
-       // Printing a BFS Tree Levels
-        System.out.println(tree.bfsrep());
+       //// Printing a BFS Tree Levels
+        //System.out.println(tree.bfsrep());
 
         // Reverse Order
         System.out.println(tree.bfsrev());
@@ -309,6 +335,22 @@ public class BFS {
 
         //Is Cousin Not Siblings
         System.out.println(tree.isCousin(root,3,4));
+
+        // Is Symmetric
+
+        BFS tree2 = new BFS();
+        root = null;
+        tree2.bfsInsert(1);
+        tree2.bfsInsert(2);
+        tree2.bfsInsert(2);
+        tree2.bfsInsert(3);
+        tree2.bfsInsert(4);
+        tree2.bfsInsert(4);
+        tree2.bfsInsert(3);
+        List<List<Integer>> newtree = tree2.bfsrep();
+        System.out.println(newtree);
+        System.out.println(tree2.IsSymmetric(root));
+
 
 
     }
