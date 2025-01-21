@@ -5,7 +5,8 @@ import java.util.*;
 
 
 public class BFS {
-     static private Node root;
+     public static Node root;
+
     static class Node{
         int val;
         Node left;

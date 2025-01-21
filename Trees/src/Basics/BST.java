@@ -1,7 +1,7 @@
 package Basics;
 
 public class BST {
-    private Node root;
+    public Node root;
     public BST(){}
     public class Node{
          int value;

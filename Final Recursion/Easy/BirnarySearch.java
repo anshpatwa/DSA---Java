@@ -14,7 +14,7 @@ public class BirnarySearch {
     }
     public static void main(String[] args) {
         int[] array = {11,22,33,44,55,66,77,88,99,110};
-        System.out.println(BinarySearch(array,22,0,array.length-1));
+        System.out.println(BinarySearch(array,110,0,array.length-1));
     }
 }
 // Debug and Expand the Knowledge .
